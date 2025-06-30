@@ -1,8 +1,16 @@
-# Hello! This is the Graph Properties markdown file!
+# Graph-Properties
 
 ## Program Objective 
 
-The objective of this program is to answer essential questions about a graph. How many edges? How many nodes? How many neighbors? Can we get from node u to node v and if so does there exist a shortest path? 
+The objective of this program is to answer essential questions about a graph. Such questions include the following:
+1. How many nodes?
+2. How many edges?
+3. How many neighbors does a particular node have?
+4. What is the edge weight between two nodes?
+5. What is the shorted unweighted path between node a and node b?
+6. What is the shorted weighted path between node a and node b?
+7. What are the connected components of the graph?
+8. What is the smallest connecting threshold in the graph? 
 
 ## How to compile and run the program
 
@@ -10,10 +18,6 @@ So far, there are the following tests: graph_properties, shortest_unweighted, sh
 
 1. Adjust your directory, type 'make' in console to active Makefile.
 2. Run the following './GraphTest ./Examples/small-graph.csv x' where x denotes one of the test specified above.
-
-## Time complexity
-
-
 
 
 ## Examples
@@ -24,10 +28,15 @@ Here is the are some example outputs.
 First is the graph properties test:
 
 Number of Nodes 7
+
 Nodes   {"A","B","C","D","E","F","G"}
+
 Number of Edges 6
+
 Edge Weights    {"A":{"A":-1,"B":0.1,"C":0.5,"D":-1,"E":-1,"F":-1,"G":-1},"B":{"A":0.1,"B":-1,"C":0.1,"D":0.1,"E":-1,"F":-1,"G":-1},"C":{"A":0.5,"B":0.1,"C":-1,"D":-1,"E":-1,"F":-1,"G":-1},"D":{"A":-1,"B":0.1,"C":-1,"D":-1,"E":-1,"F":-1,"G":-1},"E":{"A":-1,"B":-1,"C":-1,"D":-1,"E":-1,"F":0.4,"G":-1},"F":{"A":-1,"B":-1,"C":-1,"D":-1,"E":0.4,"F":-1,"G":0.5},"G":{"A":-1,"B":-1,"C":-1,"D":-1,"E":-1,"F":0.5,"G":-1}}
+
 Number of Neighbors     {"A":2,"B":3,"C":2,"D":1,"E":1,"F":2,"G":1}
+
 Neighbors       {"A":{"C","B"},"B":{"D","C","A"},"C":{"B","A"},"D":{"B"},"E":{"F"},"F":{"G","E"},"G":{"F"}}
 
 
