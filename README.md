@@ -1,2 +1,3 @@
 # graph-properties-application
-Solving interesting problems using undirected and directed graohs
+
+Passion project dedicated to graph theory designed to answer important questions pertaining to graphs.
