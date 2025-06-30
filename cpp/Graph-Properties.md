@@ -6,19 +6,26 @@ The objective of this program is to answer essential questions about a graph. Su
 1. How many nodes?
 2. How many edges?
 3. How many neighbors does a particular node have?
-4. What is the edge weight between two nodes?
-5. What is the shorted unweighted path between node a and node b?
-6. What is the shorted weighted path between node a and node b?
-7. What are the connected components of the graph?
-8. What is the smallest connecting threshold in the graph? 
+4. What are the neighbors of each node?
+5. What is the edge weight between two nodes?
+6. What is the shorted unweighted path between node a and node b?
+7. What is the shorted weighted path between node a and node b?
+8. What are the connected components of the graph?
+9. What is the smallest connecting threshold in the graph? 
 
 ## How to compile and run the program
 
-So far, there are the following tests: graph_properties, shortest_unweighted, shortest_weighted, connected_components, and smallest_threshold.
+There exists the following test: graph_properties, shortest_unweighted, shorted_weighted, connect_components, and smallest_threshold.
 
-1. Adjust your directory, type 'make' in console to active Makefile.
-2. Run the following './GraphTest ./Examples/small-graph.csv x' where x denotes one of the test specified above.
+1. Download, fork or clone the repository and make your way to the files directory.
+2. Type 'make' in console.
+3. Run ./GraphTest <edgelist_csv> <test>
 
+For example, if im testing the graph_properties using the csv file located in the [Examples](https://github.com/Herbie001/graph-properties-application/blob/main/cpp/Examples) directory, then I would type the following into the console:
+
+```
+./GraphTest Examples/small-graph.csv graph_propreties
+```
 
 ## Examples
 
@@ -66,7 +73,7 @@ Shortest Path (Weighted)
 
 Next is the connected components:
 
-onnected Components (threshold = 0.1)  [{"A","B","D","C"},{"E"},{"F"},{"G"}]
+Connected Components (threshold = 0.1)  [{"A","B","D","C"},{"E"},{"F"},{"G"}]
 
 
 Finally, we have the smallest connecting threshold:
