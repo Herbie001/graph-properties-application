@@ -1,0 +1,57 @@
+// TODO
+cli-root/
+├── src/
+│   ├── include/ 
+│   │   ├── algorithms/ (Work in progress)
+│   │   |   ├── dijkstras.h
+│   │   |   └── mst.h
+│   │   ├── cli/
+│   │   |   ├── commands.h
+│   │   |   ├── parser.h
+│   │   |   └── repl.h 
+│   │   └── graph/
+│   │   |   ├── edge.h
+│   │   |   ├── graph.g
+│   │   |   ├── types.h
+│   │   |   └── vertex.h
+│   │   ├── io/
+│   │   |   └── file-handler.h 
+│   │   └── visualization/ 
+│   │   |   ├── json-exporter.h
+│   │   |   └── dot-exporter.h
+|   |
+│   ├── lib/ 
+│   │   ├── algorithms/ (Work in progress)
+│   │   |   ├── dijkstras.cpp
+│   │   |   └── mst.cpp
+│   │   ├── cli/
+│   │   |   ├── commands.cpp
+│   │   |   ├── parser.cpp
+│   │   |   └── repl.cpp
+│   │   └── graph/
+│   │   |   ├── edge.cpp
+│   │   |   ├── graph.cpp
+│   │   |   ├── types.cpp
+│   │   |   └── vertex.cpp
+│   │   ├── io/
+│   │   |   └── file-handler.cpp
+│   │   └── visualization/ 
+│   │   |   ├── json-exporter.cpp
+│   │   |   └── dot-exporter.cpp
+│   └──  main.cpp/
+├── tests/
+│   ├── algorithms/ (source code for the back-end application)
+│   │   ├── shortest-path.cpp
+|   |   └──  ** last item
+|   |   
+│   ├── io/ (source code for the back-end application)
+│   │   ├── shortest-path.cpp
+|   |   └──  ** last item
+|   |
+│   ├── graph/ (source code for the back-end application)
+│   │   ├── shortest-path.cpp
+|   |   └──  ** last item
+├── .gitignore
+├── cli-hierarchy.txt
+├── README.md
+└── package.json (optional, for managing both client and server scripts)
